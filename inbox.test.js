@@ -13,7 +13,7 @@ beforeEach(async ()=>{
 
   // Use one of those accounts to deply the contract
 inbox = await new web3.eth.Contract(JSON.parse(interface))
-  .deploy({ data: byetecode, arguments: ['Hello there!']})
+  .deploy({ data: bytecode, arguments: ['Hello there!']})
   .send({from: accounts[0], gas:'1000000'})
 });
 
